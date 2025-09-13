@@ -1,0 +1,20 @@
+[
+    {
+        "courseCode": "CSE101",
+        "title": "Intro to Programming - Midsem 2023",
+        "type": "Midsem",
+        "link": "https://drive.google.com/file/d/FILE_ID/view"
+    },
+    {
+        "courseCode": "CSE101",
+        "title": "Intro to Programming - Endsem 2023",
+        "type": "Endsem",
+        "link": "https://drive.google.com/file/d/FILE_ID/view"
+    },
+    {
+        "courseCode": "MTH201",
+        "title": "Discrete Math - Quiz 2022",
+        "type": "Quiz",
+        "link": "https://drive.google.com/file/d/FILE_ID/view"
+    }
+]

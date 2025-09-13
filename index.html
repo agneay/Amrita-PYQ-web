@@ -1,0 +1,29 @@
+<!DOCTYPE hmtl>
+<html dir="ltr" lang="en-US">
+    <head>
+        <title>Amrita PYQ</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="./styles/style.css"/>
+        <script defer src="./codes/code.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            
+        </nav>
+        <h1 id="title1">Amrita Previous Year Question Papers</h1>
+        <input type="text" name="searchBox" id="searchBox" placeholder="Enter Course Code: (eg: 23CSE101)">
+        <select name="filterType" id="filterType">
+            <option value="">All Types</option>
+            <option value="MidSem">Mid Sem</option>
+            <option value="EndSem">End Sem</option>
+            <option value="Assignment">Assignment</option>
+            <option value="Quiz">Quiz</option>
+        </select>
+        <button onclick="searchPapers()" class="btn btn-danger">Search</button>
+        <ul id="results"></ul>
+        <h3 id="time"></h3>
+    </body>
+</html>
