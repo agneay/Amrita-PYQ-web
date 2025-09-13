@@ -25,6 +25,13 @@ body {
     color: white;
 }
 
+#mainParts>* {
+    border-radius: 9px;
+    /* instead of 50% */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
 input,
 select,
 button {
@@ -60,4 +67,12 @@ li {
     background-color: var(--secondary-color);
     height: 50px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    #time {
+        display: none;
+    }
 }

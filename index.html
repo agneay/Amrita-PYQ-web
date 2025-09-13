@@ -5,15 +5,18 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
         <link rel="stylesheet" href="./styles/style.css"/>
         <script defer src="./codes/code.js"></script>
     </head>
     <body>
         <nav class="navbar">
-            
+            <i class="bi bi-list" style="font-size: 2rem; color: black;margin-left:8px;"></i>
+            <a href="https://github.com/agneay" target="_blank" style="color:black"><i class="bi bi-github" style="font-size: 2rem; margin-right:8px;"></i></a>
         </nav>
         <h1 id="title1">Amrita Previous Year Question Papers</h1>
+        <div id="mainParts">
         <input type="text" name="searchBox" id="searchBox" placeholder="Enter Course Code: (eg: 23CSE101)">
         <select name="filterType" id="filterType">
             <option value="">All Types</option>
@@ -23,6 +26,7 @@
             <option value="Quiz">Quiz</option>
         </select>
         <button onclick="searchPapers()" class="btn btn-danger">Search</button>
+        </div>
         <ul id="results"></ul>
         <h3 id="time"></h3>
     </body>
