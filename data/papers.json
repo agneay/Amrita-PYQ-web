@@ -1,20 +1,110 @@
 [
     {
-        "courseCode": "CSE101",
-        "title": "Intro to Programming - Midsem 2023",
-        "type": "Midsem",
-        "link": "https://drive.google.com/file/d/FILE_ID/view"
+        "courseCode": "23MAT206",
+        "title": "23MAT206 Optimization Techniques Mid-Term Question Paper",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/1vRelFf25i_cYw_92O-RonwEuDR0o2V7o/view?usp=sharing"
     },
     {
-        "courseCode": "CSE101",
-        "title": "Intro to Programming - Endsem 2023",
-        "type": "Endsem",
-        "link": "https://drive.google.com/file/d/FILE_ID/view"
-    },
-    {
-        "courseCode": "MTH201",
-        "title": "Discrete Math - Quiz 2022",
+        "courseCode": "23ECE205",
+        "title": "23ECE205 Digital Electronics - Quiz 2",
         "type": "Quiz",
-        "link": "https://drive.google.com/file/d/FILE_ID/view"
+        "link": "https://drive.google.com/file/d/12Is7KkMucmDT4aarsITgXeANJxvT0Tfm/view?usp=sharing"
+    },
+    {
+        "courseCode": "23CSE102",
+        "title": "23CSE102 Computer Hardware Essentials Mid-Term",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/1X9iUmy-wGBjkg6U1bw5BQ_VMOUL1NN_B/view?usp=sharing"
+    },
+    {
+        "courseCode": "23CSE111",
+        "title": "23CSE111 Object Oriented Programming End Sem",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/1Gmq2PEtV_qoCe84QeTzlAxM9DSpNV8wf/view?usp=sharing"
+    },
+    {
+        "courseCode": "23PHY115",
+        "title": "23PHY115 Modern Physics",
+        "type": "Endsem",
+        "link": "https://drive.google.com/file/d/1U6VUUVwfturvv3a3Jytv0LiYsPuWCNoP/view?usp=sharing"
+    },
+    {
+        "courseCode": "23EEE104",
+        "title": "23EEE104 Introduction to electrical and electronics engineering Midterm",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/1cCKIxZWt1826T8i9pCC8UMk1qJPIYIh4/view?usp=sharing"
+    },
+    {
+        "courseCode": "23MAT107",
+        "title": "23MAT107 Calculus Midterm",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/1l9LgJJ3d8NGeEt-81bqV9pLf3-qSMdjk/view?usp=sharing"
+    },
+    {
+        "courseCode": "23CSE101",
+        "title": "23CSE101 Computational Problem Solving Midterm",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/14YwaMUhkyCCQBVv2JxdJmMLY4SFhPpNd/view?usp=sharing"
+    },
+    {
+        "courseCode": "23CSE302",
+        "title": "23CSE302 Computer Networks",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/1BefwBC7QDNt7xK1Ls6s7AAnamUnKw304/view?usp=sharing"
+    },
+    {
+        "courseCode": "23MAT116",
+        "title": "23MAT116 Discrete Maths Midterm",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/1tCo7Y4fp97JEZg6HMUi1USKAxK1sFvCO/view?usp=sharing"
+    },
+    {
+        "courseCode": "23MAT117",
+        "title": "23MAT117 Linear Algebra EndSem",
+        "type": "EndSem",
+        "link": "https://drive.google.com/file/d/16wx9ukAiRO5W6JK3lcjVmZnUE7dJgOQE/view?usp=sharing"
+    },
+    {
+        "courseCode": "23CSE201",
+        "title": "23CSE201 Procedural Programming using C",
+        "type": "MidSem",
+        "link": "https://drive.google.com/file/d/1pPalzAJYJThtL6eZJuC2an6OlcrDQzgW/view?usp=sharing"
+    },
+    {
+        "courseCode": "23CSE201",
+        "title": "23CSE201 Procedural Programming using C",
+        "type": "Quiz",
+        "link": "https://drive.google.com/file/d/12Na-N0VpP3udOn4WEjyem2JSrqi2YUnt/view?usp=sharing"
+    },
+    {
+        "courseCode": "23MAT117",
+        "title": "23MAT117 Linear Algebra",
+        "type": "EndSem",
+        "link": "https://drive.google.com/file/d/1-LlPFmmrinAB_8Rb92cwXYrlJUrbtfLB/view?usp=sharing"
+    },
+    {
+        "courseCode": "23ENG101",
+        "title": "23ENG101 Technical Communication",
+        "type": "EndSem",
+        "link": "https://drive.google.com/file/d/1fDNdc2Zr0JS7HVXUpKXkrjJ2j97kZnz9/view?usp=sharing"
+    },
+    {
+        "courseCode": "23MAT116",
+        "title": "23MAT116 Discrete Maths EndSem",
+        "type": "EndSem",
+        "link": "https://drive.google.com/file/d/1g-_7ipnS5kTQaR6XusDpmXRquxHuybYx/view?usp=sharing"
+    },
+    {
+        "courseCode": "23CSE113",
+        "title": "23CSE113 User Interface Design",
+        "type": "EndSem",
+        "link": "https://drive.google.com/file/d/1tE-oza9ZHCw_WbNroHFowJfOqB1Ctgxl/view?usp=sharing"
+    },
+    {
+        "courseCode": "23CSE111",
+        "title": "23CSE111 Object Oriented Programming End Sem",
+        "type": "EndSem",
+        "link": "https://drive.google.com/file/d/1f1XxbqereDfriCEL6MH3VN-GiNisFvjn/view?usp=sharing"
     }
 ]

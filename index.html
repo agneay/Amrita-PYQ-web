@@ -1,45 +1,68 @@
-<!DOCTYPE hmtl>
-<html dir="ltr" lang="en-US">
-    <head>
-        <title>Amrita PYQ</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Amrita PYQ</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <link rel="stylesheet" href="./styles/style.css"/>
-        <script defer src="./codes/code.js"></script>
-    </head>
-    <body>
-        <nav class="navbar">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
-            <div class="dropdown">
-                <button class="dropbtn"><i class="bi bi-list" style="font-size: 2rem; color: black;margin-left:8px;"></i></button>
-                <div class="dropdown-content">
-                <a href="https://agneay.tech" target="_blank">About the creator</a>
-                <a href="#">Contribute PYQ Papers</a>
-                <a href="https://github.com/agneay" target="_blank">Contribute Code</a>
-                <a href="#">Contribute Design</a>
-                <a href="#">Report Bug</a>
-                
-                </div>
-            </div>
-            
-            <a href="https://github.com/agneay" target="_blank" style="color:black"><i class="bi bi-github" style="font-size: 2rem; margin-right:8px;"></i></a>
-        </nav>
-        <h1 id="title1">Amrita Previous Year Question Papers</h1>
-        <div id="mainParts">
-        <input type="text" name="searchBox" id="searchBox" placeholder="Enter Course Code: (eg: 23CSE101)">
-        <select name="filterType" id="filterType">
-            <option value="">All Types</option>
-            <option value="MidSem">Mid Sem</option>
-            <option value="EndSem">End Sem</option>
-            <option value="Assignment">Assignment</option>
-            <option value="Quiz">Quiz</option>
-        </select>
-        <button onclick="searchPapers()" class="btn btn-danger">Search</button>
-        </div>
-        <ul id="results"></ul>
-        <h3 id="time"></h3>
-    </body>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Amrita PYQ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="https://agneay.tech" target="_blank">About the Creator</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdQdoSiBph1Jy7cEhp4izPxyy4UjPbqJt6pJoWJd-XTfem2fA/viewform?usp=header" target="_blank">Contribute Papers</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/agneay/Amrita-PYQ" target="_blank">Contribute Code</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScCpaLW3y_MCq1VgMAPnBzmg7Ej5RAj9TzTV1xEmIzgkNw6uQ/viewform?usp=header" target="_blank">Contribute Design</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSetTedq2X_DSnmo75L3XvVehVGa67cyVLEt0yDPCnO9GTrHrg/viewform?usp=header" target="_blank">Report Bug</a></li>
+        </ul>
+        <a href="https://github.com/agneay" target="_blank"><i class="bi bi-github fs-3"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="center-wrapper">
+  <!-- Title -->
+  <h1 id="title1">Amrita Previous Year Question Papers</h1>
+
+  <!-- Search Section -->
+  <div id="mainParts" class="container">
+    <input type="text" id="searchBox" placeholder="Enter Course Code (e.g., 23CSE101)">
+    <select id="filterType">
+      <option value="">All Types</option>
+      <option value="MidSem">Mid Sem</option>
+      <option value="EndSem">End Sem</option>
+      <option value="Assignment">Assignment</option>
+      <option value="Quiz">Quiz</option>
+    </select>
+    <button onclick="searchPapers()" class="btn btn-danger">Search</button>
+  </div>
+
+  <!-- Results -->
+  <ul id="results" class="list-group mt-3 container"></ul>
+
+  <!-- Time -->
+  <h3 id="time"></h3>
+</div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="codes/code.js" defer></script>
+</body>
 </html>

@@ -1,33 +1,50 @@
 async function searchPapers() {
+    const resultList = document.getElementById("results");
+    const time = document.getElementById("time");
     time.style.display = "none";
-    let query = document.getElementById("searchBox").value.toLowerCase();
+
+    let query = document.getElementById("searchBox").value.trim().toLowerCase();
     let filter = document.getElementById("filterType").value;
-    let resultList = document.getElementById("results");
-    resultList.innerHTML = "Loading....";
+
+    resultList.innerHTML = `
+    <div class="d-flex justify-content-center my-3">
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>`;
 
     let response = await fetch("./data/papers.json");
     let papers = await response.json();
 
-    let filtered = papers.filter(paper => {
-        return (
-            paper.courseCode.toLowerCase().includes(query) &&
-            (filter === "" || paper.type === filter)
-        );
-    });
+    let filtered = papers.filter(paper =>
+        paper.courseCode.toLowerCase().includes(query) &&
+        (filter === "" || paper.type === filter)
+    );
+
     resultList.innerHTML = "";
     if (filtered.length === 0) {
-        resultList.innerHTML = "<li>No Papers Found</li>";
+        resultList.innerHTML = `<li class="list-group-item">No Papers Found</li>`;
+        if (filtered.length === 0) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'No Results',
+                text: 'No papers match your search. Try again!',
+                confirmButtonColor: '#E84545'
+            });
+        }
+
     } else {
         filtered.forEach(paper => {
             let li = document.createElement("li");
-            li.innerHTML = `<a href="${paper.link}" target="_blank">${paper.title}</a>`;
+            li.className = "list-group-item";
+            li.innerHTML = `<a href="${paper.link}" target="_blank" class="text-decoration-none">${paper.title}</a>`;
             resultList.appendChild(li);
         });
     }
-
 }
 
-let now = new Date();
-const time = document.getElementById("time");
-time.textContent = now.toLocaleTimeString();
-
+window.addEventListener("DOMContentLoaded", () => {
+    const time = document.getElementById("time");
+    let now = new Date();
+    time.textContent = now.toLocaleTimeString();
+});
