@@ -1,4 +1,5 @@
 async function searchPapers() {
+    time.style.display = "none";
     let query = document.getElementById("searchBox").value.toLowerCase();
     let filter = document.getElementById("filterType").value;
     let resultList = document.getElementById("results");
@@ -27,4 +28,6 @@ async function searchPapers() {
 }
 
 let now = new Date();
-document.getElementById("time").textContent = now.toLocaleTimeString();
+const time = document.getElementById("time");
+time.textContent = now.toLocaleTimeString();
+
